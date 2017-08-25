@@ -74,7 +74,8 @@ class Cluster(object):
     # just prioritize the ones that we're confident about
     _GROUP_DEFAULT_PRIORITY = 10
     _GROUP_PRIORITIES = {
-        'g2.8xlarge': 2,
+        'r4.xlarge': 2,
+        'r4.2xlarge': 0,
         'm4.xlarge': 0,
         'm4.2xlarge': 0,
         'm4.4xlarge': 0,

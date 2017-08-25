@@ -1,6 +1,9 @@
 {
     "t2.micro": {"cpu": 1, "memory": 1040699392, "pods": 30},
     "t2.medium": {"cpu": 2, "memory": 4143996928, "pods": 30},
+    "r4.large": {"cpu": 2, "memory": 16827527168, "pods": 30},
+    "r4.xlarge": {"cpu": 4, "memory": 30612444672, "pods": 30},
+    "r4.2xlarge": {"cpu": 8, "memory": 63311120768, "pods": 30},
     "m4.large": {"cpu": 1, "memory": 8413763584, "pods": 30},
     "m4.xlarge": {"cpu": 2, "memory": 16827527168, "pods": 30},
     "m4.2xlarge": {"cpu": 4, "memory": 33738887168, "pods": 30},

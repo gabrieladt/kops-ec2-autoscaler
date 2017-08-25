@@ -152,14 +152,13 @@ class KubeNode(object):
         self.no_schedule_taints = {}
         self.no_execute_taints = {}
         for taint in node.obj['spec'].get('taints', []):
-            try: 
-                taint['value']
+            try :
+                if taint['effect'] == 'NoSchedule':
+                    self.no_schedule_taints[taint['key']] = taint['value']
+                if taint['effect'] == 'NoExecute':
+                    self.no_execute_taints[taint['key']] = taint['value']
             except:
-                taint['value'] = "master"
-            if taint['effect'] == 'NoSchedule':
-                self.no_schedule_taints[taint['key']] = taint['value']
-            if taint['effect'] == 'NoExecute':
-                self.no_execute_taints[taint['key']] = taint['value']
+                logger.info("Taint value not founded %s", taint)
 
     def _get_instance_data(self):
         """

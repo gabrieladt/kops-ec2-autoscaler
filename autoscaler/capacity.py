@@ -3,6 +3,9 @@ module to handle capacity of resources
 """
 import json
 
+import logging
+logger = logging.getLogger(__name__)
+
 from autoscaler.config import Config
 from autoscaler.kube import KubeResource
 
@@ -75,4 +78,5 @@ def get_unit_capacity(group):
     returns the KubeResource provided by one unit in the
     AutoScalingGroup or KubeNode
     """
+    logger.info("GGGGG %s", group.instance_type)
     return RESOURCE_SPEC[group.instance_type]
