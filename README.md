@@ -2,6 +2,24 @@ BASED ON https://github.com/openai/kubernetes-ec2-autoscaler
 
 Running on production envs with Kops 1.7, Kubernetes 1.7.3
 
+
+
+ON GOING
+
+PreScale cluster, working always with "over-provision", avoid need to wait until the nodes are full to scale
+
+
+
+
+
+
+
+
+
+
+
+
+-------------
 # kubernetes-ec2-autoscaler
 
 kubernetes-ec2-autoscaler is a node-level autoscaler for [Kubernetes](http://kubernetes.io/)
