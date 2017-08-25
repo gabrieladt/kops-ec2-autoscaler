@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/openai/kubernetes-ec2-autoscaler.svg?branch=master)](https://travis-ci.org/openai/kubernetes-ec2-autoscaler)
+BASED ON https://github.com/openai/kubernetes-ec2-autoscaler
+
+Running on production envs with Kops 1.7, Kubernetes 1.7.3
 
 # kubernetes-ec2-autoscaler
 
