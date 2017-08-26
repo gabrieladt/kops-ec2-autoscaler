@@ -1,6 +1,6 @@
-BASED ON https://github.com/openai/kubernetes-ec2-autoscaler
+FORKED/BASED ON https://github.com/openai/kubernetes-ec2-autoscaler
 
-Running on production envs with Kops 1.7, Kubernetes 1.7.3
+Test and Running on AWS production envs with Kops 1.7, Kubernetes 1.7.3
 
 
 
