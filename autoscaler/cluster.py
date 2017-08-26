@@ -65,8 +65,7 @@ class Cluster(object):
     # the number of minutes into the launch hour at which an instance
     # is fine to kill
     LAUNCH_HOUR_THRESHOLD = {
-        #'aws': 60 * 30,
-        'aws': 63,
+        'aws': 60 * 30,
         'azure': 60 * 5,  # Azure is billed by the minute
     }
 
